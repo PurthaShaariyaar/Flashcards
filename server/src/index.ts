@@ -22,6 +22,10 @@ app.get("/", (req: Request, res: Response) => {
   res.send("Hello World!"); 
 })
 
+// app.get("/decks", (req: Request, res: Response) => {
+//   res.send("YOYOYOYO")
+// })
+
 app.post("/decks", async (req: Request, res: Response) => {
   const newDeck = new Deck({
     title: req.body.title, 
